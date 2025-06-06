@@ -1,3 +1,5 @@
+package src;
+
 
 import javax.swing.DefaultListModel;
 import javax.swing.JDialog;
@@ -9,10 +11,10 @@ import javax.swing.WindowConstants;
  * and open the template in the editor.
  */
 
-public class ventanaPrincipal extends javax.swing.JFrame {
+public class Apuesta extends javax.swing.JFrame {
 
    
-    public ventanaPrincipal() 
+    public Apuesta() 
     {
         initComponents();
         this.setResizable(Boolean.FALSE);
@@ -122,7 +124,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNuevoActionPerformed
-        ventanaNuevo agregarpartido = new ventanaNuevo(this);
+        CrearPartido agregarpartido = new CrearPartido(this);
         agregarpartido.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         agregarpartido.setSize(400, 75);
         agregarpartido.setResizable(Boolean.FALSE);
@@ -227,20 +229,20 @@ public class ventanaPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ventanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Apuesta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ventanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Apuesta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ventanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Apuesta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ventanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Apuesta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ventanaPrincipal().setVisible(true);
+                new Apuesta().setVisible(true);
             }
         });
     }
